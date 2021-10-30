@@ -13,7 +13,7 @@ If you are here you are probably looking for somewhere to start your baremetal j
 
 # Compiling
 
-## Requirements
+### Requirements
 
 The systems running BCM2835 are:
 
@@ -30,7 +30,7 @@ You will need to have installed the latest version of the `arm-none-eabi-gcc`
 toolchain: this program uses it for linking. Check out rpi.json for
 more informations on how the target of this program is structured. You will also need `make`.
 
-## Using `make`:
+### Using `make`:
 
 ```sh
 make bin
@@ -38,7 +38,7 @@ make bin
 
 This will output a `target/kernel.bin` bin file, ready to be used on the BCM2835.
 
-## Preparing the SD Card:
+### Preparing the SD Card:
 
 - Get a **compatible SD Card**. I have a generic Toshiba 4GB SDHC
 - **Create** a new `DOS` **partition table**
