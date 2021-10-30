@@ -1,0 +1,5 @@
+[build]
+target = "rpi.json"
+
+[unstable]
+build-std = ["core"]

@@ -1,0 +1,35 @@
+{
+  "llvm-target": "arm-none-eabihf",
+  "target-endian": "little",
+  "target-pointer-width": "32",
+  "target-c-int-width": "32",
+  "os": "none",
+  "env": "eabi",
+  "vendor": "unknown",
+  "arch": "arm",
+  "panic-strategy": "abort",
+  "linker-flavor": "gcc",
+  "linker": "arm-none-eabi-gcc",
+  "pre-link-args": {
+    "gcc": [
+      "-Wall",
+      "-nostdlib",
+      "-nostartfiles",
+      "-ffreestanding",
+      "-march=armv6k",
+      "-Wl,--script=linker.ld"
+    ]
+  },
+  "features": "+strict-align,+v6k,+vfp2,-d32",
+  "data-layout": "e-m:e-p:32:32-i64:64-v128:64:128-a:0:32-n32-S64",
+  "executables": true,
+  "relocation-model": "static",
+  "unsupported-abis": [
+    "stdcall",
+    "fastcall",
+    "vectorcall",
+    "thiscall",
+    "win64",
+    "sysv64"
+  ]
+}

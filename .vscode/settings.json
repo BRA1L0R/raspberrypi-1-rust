@@ -1,0 +1,4 @@
+{
+    "rust-analyzer.cargo.target": "rpi.json",
+    "rust-analyzer.checkOnSave.allTargets": false
+}
